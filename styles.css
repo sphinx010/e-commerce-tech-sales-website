@@ -97,7 +97,7 @@ nav ul li a:before{
     width: 100%;
     height: 100%;
     background-color:#c853ff;
-    transition: 0.5s;
+    transition: 0.3s;
     transform-origin: right;
     transform: scale(0);
     z-index: -10;
@@ -106,7 +106,7 @@ nav ul li a:before{
 }
 
 nav ul li a:hover::before{
-    transition: transform 0.5s;
+    transition: transform 0.3s;
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -278,6 +278,8 @@ top: 2%;
 
 .sv h3{
     color: #c9bee6;
+    margin-top: 0;
+    padding-top: 0;
     font-size: 3em;
     margin-bottom: 0;
     font-weight: lighter;
@@ -290,6 +292,7 @@ top: 2%;
     color: #c9bee6;
     font-size: 1.8em;
     margin-top: 0;
+    padding-top: 0;
     font-weight: lighter;
     text-align: center;
 }
@@ -372,6 +375,7 @@ top: 2%;
     font-weight: normal;
     text-shadow: #ff00ff8c -1px -2px 3px;
     text-align: center;
+    margin-bottom: 7px;
 }
 
 .batch1{
@@ -492,6 +496,41 @@ button a{
     flex-direction: row;
     gap: 9px;
 }
+
+.quicknav ul:hover a{
+    transform: scale(1);
+    opacity: 0.4;
+    filter: blur(3px);
+}
+
+.quicknav li a:hover{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.quicknav ul li a::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fffefb00;
+    border: #6b97f7 solid 1px;
+    border-radius: 3px;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s;
+    transform-origin: right;
+    cursor: pointer;
+} 
+
+.quicknav ul li a:hover::before{
+    transition: 0.3s;
+    transform-origin: left;
+    transform: scaleX(1s);
+}
+
 
 .quicknav ul li a{
     text-decoration: none;
@@ -739,6 +778,10 @@ button a{
         margin: 0 11px;
     }
 
+    .quicknav{
+        font-size: 0.8em;
+    }
+
     main h1{
         font-size: 1.3em;
         }
@@ -752,16 +795,7 @@ button a{
         }
 
         .midtxt{
-            display: flex;
-            justify-content: center;
-            top: 0%;
-            right: 35%;
-            position: absolute;
-        }
-        .midtxt p{
-            display: inline-block;
-            margin-top: 0;
-            font-size: 1.2em;
+            display: none;
         }
         .sv h3{
             margin-top: 19px;
@@ -778,6 +812,10 @@ button a{
             height: 200px;
         }
 
+        .products h3{
+            margin-top: 14px;
+            font-size: 1.4em;
+        }
         .lcurve{
             height: 140px;
             background-color: #4b46e1;
