@@ -16,7 +16,6 @@ setTimeout(showSlides, 3000);
 }
 
 
-
 // Get references to the menu item containers
 const smartphonesContainer = document.querySelector('.batch1');
 const laptopsContainer = document.querySelector('.batch2');
