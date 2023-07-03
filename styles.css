@@ -821,7 +821,7 @@ button a{
             background-color: #4b46e1;
         }
         .elipse{
-            /* background-color: #ffffff94; */
+            display: none;
         }
         .elipse p{
             position: absolute;
