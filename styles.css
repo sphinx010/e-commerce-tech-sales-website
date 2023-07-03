@@ -500,7 +500,7 @@ button a{
 .quicknav ul:hover a{
     transform: scale(1);
     opacity: 0.4;
-    filter: blur(3px);
+    filter: blur(1px);
 }
 
 .quicknav li a:hover{
@@ -738,7 +738,7 @@ button a{
 @media only screen and (max-width: 500px){
     .pane{
         /* background-color: #ffffff94; */
-       display: grid;
+       display: none;
         padding-top: 4%;
         padding-bottom: 3px;
         grid-template-columns: repeat(2, 180px);
